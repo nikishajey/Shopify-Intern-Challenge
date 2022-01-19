@@ -11,7 +11,7 @@ ADD Function
 - The website will allow you to add any image desired! Just click on "choose files" and you will be allowed to add image formats of JPG, JPEG, PNG etc.
 
 TESTING:
-- To test the function, I've also added a folder called uploads of some cute images that you can use to add onto the repository to make sure it works!
+- To test the function, please download index.html and main.css and I've also added a folder called uploads of some cute images that you can use to add onto the repository to make sure it works!
 - The images used are all from Google Image search
 
 FUTURE FEATURES:
