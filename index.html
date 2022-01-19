@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1">
+    <title>My Image Repo</title>
+  </head>
+  <body>
+      <div class= "header">
+        <h2>MY PHOTO GALLERY</h2>
+        <h3>All Photos</h3>
+      </div>
+    <br><br><br>
+    <input type= "file" id="inputfile" accept=image/* multiple>
+    <div id= "preview"> </div>
+    <script>
+    function previewImages() {
+      var preview = document.querySelector('#preview');
+      if (this.files) {
+        [].forEach.call(this.files, read_Preview);
+      }
+
+      function read_Preview(file) {
+        var reader = new FileReader();
+        reader.addEventListener("load", function() {
+          var image = new Image();
+          image.height = 200;
+          image.width = 200;
+          image.title = file.name;
+          image.src = this.result;
+          image.paddingRight = 40;
+          image.paddingTop = 30;
+          image.paddingBottom = 30;
+          preview.appendChild(image);
+        });
+      reader.readAsDataURL(file);
+      }
+    }
+    document.querySelector('#inputfile').addEventListener("change", previewImages);
+    </script>
+  </body>
+</html>
