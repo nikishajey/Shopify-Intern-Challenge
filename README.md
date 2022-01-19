@@ -12,6 +12,7 @@ ADD Function
 
 TESTING:
 - To test the function, I've also added a folder called uploads of some cute images that you can use to add onto the repository to make sure it works!
+- The images used are all from Google Image search
 
 FUTURE FEATURES:
 - I plan on implementing the delete function so that you can delete pictures you don't want on the repository.
